@@ -1,0 +1,41 @@
+{
+	"groups": [
+		{
+			"keys": "gameres_json,stay_json,stay_png,weizhu_png,weizhu_json",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "assets/gameres.json",
+			"type": "sheet",
+			"name": "gameres_json",
+			"subkeys": "arron,bg,btn_start,failed,more,pot1,pot2,replay,shareBTN,txt,victory"
+		},
+		{
+			"url": "assets/stay.json",
+			"type": "json",
+			"name": "stay_json"
+		},
+		{
+			"url": "assets/stay.png",
+			"type": "image",
+			"name": "stay_png"
+		},
+		{
+			"url": "assets/weizhu.json",
+			"type": "json",
+			"name": "weizhu_json"
+		},
+		{
+			"url": "assets/weizhu.png",
+			"type": "image",
+			"name": "weizhu_png"
+		}
+	]
+}
