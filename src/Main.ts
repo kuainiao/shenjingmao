@@ -45,15 +45,19 @@ class Main extends egret.DisplayObjectContainer {
     private onGroupComplete() {
         this._viewManager = new ViewManager(this, RES.getRes("gameres_json"));
 
-        var cat: Cats = new Cats();
-        cat.x = 100;
-        cat.y = 200;
-        this.addChild(cat);
-
-        var tile:Tile = new Tile(RES.getRes('gameres_json'));
-        tile.x = 50;
-        tile.y = 60;
-        this.addChild(tile);
+        this.addEventListener(GameEvent.START_GAME, this.startGame, this);
+        this.addEventListener(GameEvent.OPEN_TILE, this.openTile, this);
+                
+    }
+    private startGame() {
+        DataManger.instance().init_tileDatas();
+        DataManger.instance().selectTile();
+        DataManger.instance().createCatPoint();
+        
+    }
+    private openTile() {
+        DataManger.instance().stepNum++;
+        DataManger.instance().closeTileByIndex();
     }
 }
 
