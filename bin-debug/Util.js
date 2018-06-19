@@ -1,6 +1,7 @@
 var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
+// 计算 地图坐标点的方法
 var Util = (function () {
     function Util() {
     }

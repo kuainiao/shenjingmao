@@ -15,6 +15,7 @@ var Tile = (function (_super) {
     __extends(Tile, _super);
     function Tile(textures) {
         var _this = _super.call(this) || this;
+        // point 序号
         _this.index = 0;
         // 控制显示灰色位图或者红色位图
         _this._isOpen = true;
@@ -50,8 +51,11 @@ var Tile = (function (_super) {
     Tile.prototype.onClick = function () {
         if (this._isOpen) {
             // 逻辑运算
+            // 实例化自定义事件
             var evt = new GameEvent(GameEvent.OPEN_TILE);
+            // 设置事件index属性
             evt.open_tile_index = this.index;
+            // 发送自定义事件
             this.dispatchEvent(evt);
         }
         this.close();

@@ -1,5 +1,6 @@
+// 游戏失败界面
 class GameOverPanelF extends egret.Sprite{
-    private constructor(textures:egret.SpriteSheet) {
+    public constructor(textures:egret.SpriteSheet) {
         super();
         var gameOverPanelF:egret.Bitmap = new egret.Bitmap();
         gameOverPanelF.texture = textures.getTexture('failed');

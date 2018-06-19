@@ -1,3 +1,4 @@
+// 神经猫
 class Cats extends egret.Sprite{
     private _action1mc: egret.MovieClip;
     private _action2mc: egret.MovieClip;
@@ -40,7 +41,7 @@ class Cats extends egret.Sprite{
         }
     }
 
-    public get isAction1(): Boolean{
+    public isAction1(): Boolean{
         return this._isAction1mc;
     }
     public set isAction(val: boolean) {

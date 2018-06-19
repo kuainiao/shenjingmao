@@ -1,5 +1,6 @@
+// 开始游戏面板界面
 class StartGamePanel extends egret.Sprite{
-    private constructor(textures:egret.SpriteSheet){
+    public constructor(textures:egret.SpriteSheet){
         super();
         var startgameBitmap:egret.Bitmap = new egret.Bitmap();
         startgameBitmap.texture = textures.getTexture('btn_start');

@@ -8,12 +8,15 @@
 		"promise/bin/promise.js"
 	],
 	"game": [
-		"bin-debug/view/BackgroundPanel.js",
+		"bin-debug/element/Tile.js",
 		"bin-debug/GameEvent.js",
 		"bin-debug/Util.js",
+		"bin-debug/data/CatAi.js",
+		"bin-debug/data/CatNode.js",
+		"bin-debug/data/DataManger.js",
 		"bin-debug/element/Cats.js",
-		"bin-debug/element/Tile.js",
 		"bin-debug/Main.js",
+		"bin-debug/view/BackgroundPanel.js",
 		"bin-debug/view/GameOverButtonPanel.js",
 		"bin-debug/view/GameOverPanelF.js",
 		"bin-debug/view/GameOverPanelS.js",

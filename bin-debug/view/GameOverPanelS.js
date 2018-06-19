@@ -11,6 +11,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+// 游戏成功界面
 var GameOverPanelS = (function (_super) {
     __extends(GameOverPanelS, _super);
     function GameOverPanelS(textures) {

@@ -1,6 +1,7 @@
+// gameOver 再来一次按钮
 class GameOverButtonPanel extends egret.Sprite{
     private _reStartBtn: egret.Sprite;
-    private constructor(textures: egret.SpriteSheet) {
+    public constructor(textures: egret.SpriteSheet) {
         super();
         this._reStartBtn = new egret.Sprite();
         this._reStartBtn.width = 200;

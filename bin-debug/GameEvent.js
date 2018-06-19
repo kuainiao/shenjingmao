@@ -11,6 +11,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+// 创建自定义事件
+// 继承自egret.Event
 var GameEvent = (function (_super) {
     __extends(GameEvent, _super);
     function GameEvent(type, bubbles, cancelable) {
@@ -21,6 +23,7 @@ var GameEvent = (function (_super) {
         return _this;
     }
     GameEvent.OPEN_TILE = 'open_tile';
+    GameEvent.START_GAME = 'start_game';
     return GameEvent;
 }(egret.Event));
 __reflect(GameEvent.prototype, "GameEvent");

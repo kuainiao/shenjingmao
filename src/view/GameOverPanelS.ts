@@ -1,5 +1,6 @@
+// 游戏成功界面
 class GameOverPanelS extends egret.Sprite{
-    private constructor(textures:egret.SpriteSheet) {
+    public constructor(textures:egret.SpriteSheet) {
         super();
         var gameOverPanelS:egret.Bitmap = new egret.Bitmap();
         gameOverPanelS.texture = textures.getTexture('victory');

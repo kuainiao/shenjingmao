@@ -1,3 +1,4 @@
+// 计算 地图坐标点的方法
 class Util {
     public static getPointByIndex( index:number):egret.Point {
         var point:egret.Point = new egret.Point();

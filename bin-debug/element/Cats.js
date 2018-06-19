@@ -11,6 +11,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+// 神经猫
 var Cats = (function (_super) {
     __extends(Cats, _super);
     function Cats() {
@@ -49,13 +50,9 @@ var Cats = (function (_super) {
             this.addChild(this._action2mc);
         }
     };
-    Object.defineProperty(Cats.prototype, "isAction1", {
-        get: function () {
-            return this._isAction1mc;
-        },
-        enumerable: true,
-        configurable: true
-    });
+    Cats.prototype.isAction1 = function () {
+        return this._isAction1mc;
+    };
     Object.defineProperty(Cats.prototype, "isAction", {
         set: function (val) {
             if (this._isAction1mc !== val) {

@@ -1,6 +1,7 @@
 class Tile extends egret.Sprite{
-
+    // point 序号
     public index:number = 0;
+    // 颜色类型
     private _redSkin:egret.Bitmap;
     private _blackSkin:egret.Bitmap;
     public constructor(textures:egret.SpriteSheet){
@@ -42,9 +43,11 @@ class Tile extends egret.Sprite{
     private onClick(){
         if(this._isOpen){
             // 逻辑运算
-
+            // 实例化自定义事件
             var evt:GameEvent = new GameEvent(GameEvent.OPEN_TILE);
+            // 设置事件index属性
             evt.open_tile_index = this.index;
+            // 发送自定义事件
             this.dispatchEvent(evt);
         }
         this.close();

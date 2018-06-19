@@ -11,6 +11,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+// gameOver 再来一次按钮
 var GameOverButtonPanel = (function (_super) {
     __extends(GameOverButtonPanel, _super);
     function GameOverButtonPanel(textures) {
